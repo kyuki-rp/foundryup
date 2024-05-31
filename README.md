@@ -13,7 +13,7 @@
     https://qiita.com/75ks/items/b2961e8562c353f42d21
 
 ## git初期設定
-1. 以下のコマンドを順次実行する。
+1. ターミナルを開いて、以下のコマンドを順次実行する。
     ```
     git config --global user.name "<GitHubに登録したユーザー名>"
     git config --global user.email <GitHubに登録したメールアドレス>
