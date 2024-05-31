@@ -1,7 +1,7 @@
 # Foundryup on Docker
 
 ## VSCodeでDockerに接続
-1. 以下のサイトなどを参考にDockerをインストール
+1. 以下のサイトなどを参考にDockerをインストール  
     https://shikaku-mafia.com/docker-install/
 
 1. 次のコマンドを実行して、リポジトリをクローンする
@@ -9,7 +9,7 @@
     git clone https://github.com/kyuki-rp/foundryup.git
     ```
 
-1. 以下のサイトなどを参考にVSCodeでDocker接続
+1. 以下のサイトなどを参考にVSCodeでDocker接続  
     https://qiita.com/75ks/items/b2961e8562c353f42d21
 
 ## git初期設定
