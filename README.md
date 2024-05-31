@@ -1,8 +1,11 @@
 # Foundryup on Docker
 
 ## VSCodeでDockerに接続
+1. 以下のサイトなどを参考にDockerをインストール
+    https://shikaku-mafia.com/docker-install/
+
 1. 以下のサイトなどを参考にVSCodeでDocker接続
-https://qiita.com/75ks/items/b2961e8562c353f42d21
+    https://qiita.com/75ks/items/b2961e8562c353f42d21
 
 ## git初期設定
 1. 以下のコマンドを順次実行する。
