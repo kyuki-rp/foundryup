@@ -5,7 +5,9 @@
     "workspaceFolder": "/workspace",
     "customizations": {
         "vscode": {
-            "extensions": [],
+            "extensions": [
+                "NomicFoundation.hardhat-solidity"
+            ],
             "settings": {
                 "editor.tabSize": 4
             }
