@@ -1,0 +1,14 @@
+{
+    "name": "Foundryup Project",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "foundryup",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [],
+            "settings": {
+                "editor.tabSize": 4
+            }
+        }
+    }
+}
