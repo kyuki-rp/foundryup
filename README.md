@@ -4,6 +4,11 @@
 1. 以下のサイトなどを参考にDockerをインストール
     https://shikaku-mafia.com/docker-install/
 
+1. 次のコマンドを実行して、リポジトリをクローンする
+    ```
+    git clone https://github.com/kyuki-rp/foundryup.git
+    ```
+
 1. 以下のサイトなどを参考にVSCodeでDocker接続
     https://qiita.com/75ks/items/b2961e8562c353f42d21
 
@@ -16,7 +21,7 @@
     ```
     ※ <>の部分は自分の環境のものに置き換える
 
-1. 以下のコマンドを実行して、上で行った設定が反映されているか確認する。
+1. 次のコマンドを実行して、上で行った設定が反映されているか確認する。
     ```
     git config --list
     ```
