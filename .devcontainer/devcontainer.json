@@ -6,7 +6,7 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "NomicFoundation.hardhat-solidity"
+                "JuanBlanco.solidity"
             ],
             "settings": {
                 "editor.tabSize": 4

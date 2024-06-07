@@ -26,13 +26,25 @@
     git config --list
     ```
 
-## foundryのインストール
-1. 次のコマンドを実行する。
+## nodejsのインストール
+1. 次のコマンドを実行して、nodejsをインストールする。
     ```
-    curl -L https://foundry.paradigm.xyz/ | bash
+    nvm install 20.14.0
     ```
 
-1. 新しいターミナルを開き、次のコマンドを実行する。
+1. 次のコマンドを実行して、nodejsがインストールできていることを確認する。
+    ```
+    node --version
+    ```
+
+## foundryのインストール
+1. 次のコマンドを実行して、foundryのインストールする。
     ```
     foundryup
+    ```
+
+## プロジェクトの作成
+1. 次のコマンドを実行して、プロジェクトを作成する。
+    ```
+    forge init simple-dao -t metacontract/template
     ```
