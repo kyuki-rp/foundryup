@@ -16,7 +16,7 @@
 
 ## Makefile 編集（任意）
 
-1. Makefile を開いて、5 行目の "you@example.com" および 6 行目の "Your Name" を自身の環境に併せて編集する
+1. Makefile を開いて、5 行目の "you@example.com" および 6 行目の "Your Name" を自身の環境に合わせ編集する。
    ```Makefile
    @git config --global user.email "you@example.com"
    @git config --global user.name "Your Name"
