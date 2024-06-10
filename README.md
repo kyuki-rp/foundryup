@@ -1,50 +1,26 @@
 # Foundryup on Docker
 
-## VSCodeでDockerに接続
-1. 以下のサイトなどを参考にDockerをインストールする。  
-    https://shikaku-mafia.com/docker-install/
+## 事前準備
+
+1. VSCode をインストールする。
+
+1. [本サイト](https://shikaku-mafia.com/docker-install/)などを参考に Docker をインストールする。
+
+1. [本サイト](https://qiita.com/75ks/items/b2961e8562c353f42d21)などを参考に VSCode に [Devcontainers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) をインストールする。
+
+## 実行手順
 
 1. 次のコマンドを実行して、このリポジトリをクローンする。
-    ```
-    git clone https://github.com/kyuki-rp/foundryup.git
-    ```
 
-1. 以下のサイトなどを参考にVSCodeでDockerに接続する。  
-    https://qiita.com/75ks/items/b2961e8562c353f42d21
+   ``` bash
+   git clone https://github.com/kyuki-rp/foundryup.git
+   ```
 
-## git初期設定
-1. ターミナルを開いて、以下のコマンドを順次実行する。
-    ```
-    git config --global user.name "<GitHubに登録したユーザー名>"
-    git config --global user.email <GitHubに登録したメールアドレス>
-    git config --global core.editor 'code --wait'
-    ```
-    ※ <>の部分は自分の環境のものに置き換える。
+1. Makefile を開いて、5 行目の `you@example.com` および 6 行目の `Your Name` を自身の環境に合わせ編集する。（コミット等を行わないのであれば本手順を飛ばしても問題ありません。）
 
-1. 次のコマンドを実行して、上で行った設定が反映されているか確認する。
-    ```
-    git config --list
-    ```
+   ```Makefile
+   @git config --global user.email "you@example.com"
+   @git config --global user.name "Your Name"
+   ```
 
-## nodejsのインストール
-1. 次のコマンドを実行して、nodejsをインストールする。
-    ```
-    nvm install 20.14.0
-    ```
-
-1. 次のコマンドを実行して、nodejsがインストールできていることを確認する。
-    ```
-    node --version
-    ```
-
-## foundryのインストール
-1. 次のコマンドを実行して、foundryのインストールする。
-    ```
-    foundryup
-    ```
-
-## プロジェクトの作成
-1. 次のコマンドを実行して、プロジェクトを作成する。
-    ```
-    forge init simple-dao -t metacontract/template
-    ```
+1. Windows は `ctrl + shift + P`、 Mac は `cmd + shift + P` でコマンドパレットを開き、`Dev containers: Open Folder in Container...` を選択し、クローンした本リポジトリのフォルダを選択する。
