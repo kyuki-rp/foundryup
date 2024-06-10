@@ -1,16 +1,41 @@
 {
-    "name": "Foundryup Project",
-    "dockerComposeFile": "docker-compose.yml",
-    "service": "foundryup",
-    "workspaceFolder": "/workspace",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "JuanBlanco.solidity"
-            ],
-            "settings": {
-                "editor.tabSize": 4
-            }
-        }
-    }
+	"name": "Solidity",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "1-20-bookworm"
+		}
+	},
+	"runArgs": [
+		"--cap-add=SYS_PTRACE",
+		"--security-opt",
+		"seccomp=unconfined"
+	],
+		"mounts": [
+		"type=volume,source=simple-dao-tmp-volume,target=${containerWorkspaceFolder}/simple-dao"
+	],
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"editor.formatOnSave": true,
+				"[solidity]": {
+					"editor.defaultFormatter": "JuanBlanco.solidity"
+				},
+			},
+			"extensions": [
+				"mutantdino.resourcemonitor",
+				"juanblanco.solidity",
+				"esbenp.prettier-vscode",
+				"ms-vsliveshare.vsliveshare",
+				"trailofbits.slither-vscode",
+				"tintinweb.solidity-visual-auditor"
+			]
+		}
+	},
+	"forwardPorts": [
+		30303,
+		8545
+	],
+	"postCreateCommand": "make init",
+	"remoteUser": "root"
 }
